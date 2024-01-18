@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <div>
-    <h1> Arithmetic</h1>
-    <input type="number" id = "box1"> <span> +</span>
-    <input type="number" id = "box2" >
-    <button onclick = "add()"> = </button>
-    <label id = "sum"> </label>
-</div>
-    <script>
 
-        function add(){
-            let box1Input = document.getElementById('box1');
-            let box2Input = document.getElementById('box2');
-            let sum = Number(box1Input.value) + Number(box2Input.value);
-            document.getElementById("sum").innerText =sum;
-        }
-    </script>
-</body>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <section>
+            <h1>
+                Arithmetic
+            </h1>
+            <input type="number" id="num1"> 
+            <span>+</span>
+            <input type="number" id="num2"> 
+            <button onclick="add()">=</button>
+            <label id="sum"></label>
+        </section>
+        <script>
+            function add()
+            {
+                let num1Input=document.getElementById('num1');
+                let num2Input =document.getElementById('num2');
+                let sum= Number(num1Input.value)+Number(num2Input.value);
+                document.getElementById("sum").innerText=sum;
+            }
+        </script>
+
+    </body>
 </html>
